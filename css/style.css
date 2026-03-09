@@ -331,6 +331,19 @@ h1, h2, h3 {
   color: white; 
 }
 
+/* Contact & About Grid Responsive */
+.contact-grid,
+.about-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .contact-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Footer */
 footer {
   background: var(--dark);

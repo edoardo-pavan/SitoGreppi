@@ -22,16 +22,19 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>Lo sport vive al Greppi</h1>
-        <p>Benvenuti nel portale ufficiale del Comitato Sportivo Studentesco dell'I.I.S.S. Alessandro Greppi di Monticello (LC).</p>
+    <section class="hero" style="background-image: url('img/fotovillahome.png'); background-size: cover; background-position: center;">
+        <div class="hero-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6);"></div>
+        <div style="position: relative; z-index: 2;">
+            <h1>Lo sport vive al Greppi</h1>
+            <p>Benvenuti nel portale ufficiale del Comitato Sportivo Studentesco dell'I.I.S.S. Alessandro Greppi di Monticello (LC).</p>
+        </div>
     </section>
 
     <main class="container">
         <h2 style="text-align: center;">I Nostri Eventi</h2>
         <div class="events-grid">
             <div class="card">
-                <div class="card-img">[Immagine Ragazzi che corrono]</div>
+                <div class="card-img" style="background-image: url('img/fotoragazzi.png'); background-size: cover; background-position: center; color: transparent;">[Immagine Ragazzi che corrono]</div>
                 <div class="card-content">
                     <h3>Corri Greppi</h3>
                     <p>La tradizionale corsa campestre d'istituto aperta a studenti, docenti e personale. 5km di pura energia nel verde della Brianza.</p>
@@ -40,7 +43,7 @@
             </div>
             
             <div class="card">
-                <div class="card-img">[Immagine Gruppo in bicicletta]</div>
+                <div class="card-img" style="background-image: url('img/imgbici1'); background-size: cover; background-position: center; color: transparent;">[Immagine Gruppo in bicicletta]</div>
                 <div class="card-content">
                     <h3>Greppi Bike</h3>
                     <p>Una pedalata ecologica non competitiva di 15km tra le colline del lecchese. Un'occasione per stare insieme all'aria aperta.</p>
@@ -49,7 +52,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img">[Immagine Torneo Pallavolo]</div>
+                <div class="card-img" style="background-image: url('img/grupporagazzicomitato.jpg'); background-size: cover; background-position: center; color: transparent;">[Immagine Torneo Pallavolo]</div>
                 <div class="card-content">
                     <h3>Festa Primaverile</h3>
                     <p>L'evento di chiusura dell'anno: tornei interclasse di calcetto, pallavolo e basket nei campi all'aperto dell'istituto.</p>
@@ -58,6 +61,37 @@
             </div>
         </div>
     </main>
+
+    <section style="background: var(--dark); color: white; padding: 60px 20px; text-align: center;">
+        <h2 style="color: var(--primary-bright); margin-bottom: 2rem;">I Nostri Momenti</h2>
+        <p style="margin-bottom: 3rem; font-size: 1.1rem;">Scopri l'energia e la passione del Comitato Sportivo Studentesco attraverso i nostri video</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+            <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.3);">
+                <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                    <iframe src="https://www.youtube.com/embed/0tg53-FqKUw" 
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div style="padding: 1rem;">
+                    <h4 style="color: var(--dark); margin: 0;">Corri Greppi 2025</h4>
+                </div>
+            </div>
+            
+            <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.3);">
+                <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                    <iframe src="https://www.youtube.com/embed/YhmUD1YrfaY" 
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div style="padding: 1rem;">
+                    <h4 style="color: var(--dark); margin: 0;">Greppi Bike 2025</h4>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <p><strong>Comitato Sportivo Studentesco</strong></p>
