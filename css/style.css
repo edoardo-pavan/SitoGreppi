@@ -1,0 +1,354 @@
+/* css/style.css */
+:root {
+  --primary: #2d7a3a; /* Verde Greppi */
+  --primary-bright: #4ade80; /* Verde brillante per accenti */
+  --accent: #facc15; /* Giallo per contrasto (richiama i pettorali/trofei) */
+  --dark: #121212;
+  --light: #ffffff;
+  --gray-100: #f3f4f6;
+  --gray-800: #1f2937;
+  --bg-light: #f3f4f6;
+  --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Reset e Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { 
+  scroll-behavior: smooth; 
+  scroll-padding-top: 100px; 
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--gray-100);
+  color: var(--dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Tipografia Sportiva */
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+/* Header Glassmorphism */
+.main-header {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 3px solid var(--primary);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 70px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: var(--primary);
+  font-weight: 900;
+  font-style: italic;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover { color: var(--primary); }
+
+/* Hero Section "Aggressiva" */
+.hero {
+  background: var(--dark);
+  color: var(--light);
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Effetto striscia diagonale sullo sfondo */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; right: -10%;
+  width: 50%; height: 100%;
+  background: var(--primary);
+  transform: skewX(-20deg);
+  z-index: 1;
+  opacity: 0.2;
+}
+
+.hero .content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: var(--primary-bright);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+/* Event Cards - Stile "Flyer" */
+.container {
+  max-width: 1200px;
+  margin: -50px auto 50px; /* Sovrappone leggermente alla hero */
+  padding: 0 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: var(--light);
+  border-radius: 0; /* Angoli squadrati per un look più tecnico */
+  border-left: 8px solid var(--primary);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-10px) rotate(1deg);
+  box-shadow: 20px 20px 0px var(--accent);
+}
+
+.card-img {
+  height: 200px;
+  background: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content { padding: 25px; }
+
+.card-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Pulsanti "Street" */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%); /* Forma a trapezio sportivo */
+}
+
+.btn:hover {
+  background: var(--dark);
+  transform: scale(1.05);
+}
+
+/* Navbar Evento (Secondaria) */
+.event-nav {
+  background: var(--dark);
+  padding: 15px 0;
+  position: sticky;
+  top: 70px;
+  z-index: 999;
+}
+
+.event-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.event-nav a {
+  color: var(--light);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.event-nav a:hover {
+  background: var(--primary);
+}
+
+/* Sezioni Interne Evento */
+.event-section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.event-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.event-section h2::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 6px;
+  background: var(--accent);
+}
+
+/* Form e Input */
+.form-group { margin-bottom: 20px; }
+.form-control {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid var(--gray-100);
+  background: var(--gray-100);
+  font-weight: 600;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: white;
+}
+
+/* Hamburger Menu - Hidden by default (desktop) */
+.menu-toggle { 
+  display: none; 
+}
+
+/* Sponsor Styles */
+.sponsor-tier {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.sponsor-tier h2 {
+  border-bottom: 2px solid var(--primary);
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+
+.logo-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  transition: box-shadow 0.3s ease;
+}
+
+.logo-box:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.logo-placeholder {
+  width: 100%;
+  height: 80px;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.cta-sponsor {
+  background-color: var(--primary);
+  color: white;
+  padding: 3rem 1rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cta-sponsor h3 { 
+  color: white; 
+}
+
+/* Footer */
+footer {
+  background: var(--dark);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.5rem; }
+  .container { margin-top: 20px; }
+  .menu-toggle { display: block; font-size: 2rem; color: var(--primary); background: none; border: none; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px; left: 0; width: 100%;
+    background: white; flex-direction: column; padding: 20px;
+  }
+  .nav-links.active { display: flex; }
+}

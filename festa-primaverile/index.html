@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Festa Primaverile dello Sport 2026: Tornei calcio, pallavolo, basket. Evento di chiusura anno scolastico Comitato Sportivo Studentesco I.I.S.S. Greppi Monticello.">
+    <title>Festa Primaverile | Greppi Sport</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo"><a href="../index.html">Greppi Sport</a></div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="../sponsor.html">Sponsor</a></li>
+                <li><a href="../contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="event-nav">
+        <ul>
+            <li><a href="#hero">Inizio</a></li>
+            <li><a href="#info">Info</a></li>
+            <li><a href="#programma">Programma</a></li>
+            <li><a href="#attivita">Attività</a></li>
+            <li><a href="#iscrizioni">Iscrizioni</a></li>
+            <li><a href="#regolamento">Regolamento</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero" class="hero" style="padding: 6rem 1rem;">
+        <h1>Festa Primaverile dello Sport</h1>
+        <p>28 Maggio 2026 • Tornei Interclasse • Festeggiamo la fine dell'anno scolastico!</p>
+    </section>
+
+    <section id="info" class="event-section">
+        <h2>Info Evento</h2>
+        <p>Una giornata intera dedicata allo sport di squadra per salutare l'anno scolastico. Le lezioni sono sospese e tutta la scuola si trasforma in un grande villaggio olimpico con tornei, musica e stand gastronomici gestiti dai rappresentanti degli studenti.</p>
+    </section>
+
+    <section id="programma" class="event-section">
+        <h2>Programma</h2>
+        <ul>
+            <li><strong>08:10</strong> - Appello in classe</li>
+            <li><strong>08:30</strong> - Inizio fasi a gironi (tutti i campi)</li>
+            <li><strong>11:30</strong> - Pausa pranzo (Panini e salamelle)</li>
+            <li><strong>12:30</strong> - Fasi finali</li>
+            <li><strong>14:00</strong> - Premiazione della "Classe Campione" e DJ Set</li>
+        </ul>
+    </section>
+
+    <section id="attivita" class="event-section">
+        <h2>Attività e Tornei</h2>
+        <p>Le classi si sfideranno in 3 discipline: Calcio a 5 (maschile e femminile), Pallavolo (mista) e Basket 3vs3. Ogni classe dovrà schierare le proprie squadre raccogliendo punti per la classifica generale dell'istituto.</p>
+    </section>
+
+    <section id="iscrizioni" class="event-section">
+        <h2>Come Iscriversi (Solo Rappresentanti)</h2>
+        <p>L'iscrizione avviene per classe. Solo il Rappresentante di Classe deve compilare questo modulo indicando le rose delle squadre.</p>
+        <form style="background: var(--bg-light); padding: 2rem; border-radius: 8px;" onsubmit="event.preventDefault();">
+            <div class="form-group">
+                <label for="classe">Classe</label>
+                <input type="text" id="classe" class="form-control" placeholder="Es: 4^B AFM">
+            </div>
+            <button type="submit" class="btn">Registra Squadre Classe</button>
+        </form>
+    </section>
+
+    <section id="regolamento" class="event-section">
+        <h2>Regolamento Tornei</h2>
+        <ul>
+            <li>Fair Play: le bestemmie e le intemperanze comportano la squalifica immediata del giocatore e 5 punti di penalizzazione per la classe.</li>
+            <li>Pallavolo mista: obbligo di avere in campo sempre almeno 2 ragazze e 2 ragazzi.</li>
+            <li>Arbitraggi autogestiti dagli studenti di quinta esonerati.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p><strong>Comitato Sportivo Studentesco</strong></p>
+        <p><a href="../index.html">Torna alla Home</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

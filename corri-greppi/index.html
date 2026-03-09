@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Corri Greppi 2026: Corsa campestre 5km nella Villa Greppi di Monticello. Evento del Comitato Sportivo Studentesco. Iscrizioni aperte per studenti, docenti e personale.">
+    <title>Corri Greppi 2026 | Greppi Sport</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo"><a href="../index.html">Greppi Sport</a></div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="../sponsor.html">Sponsor</a></li>
+                <li><a href="../contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="event-nav">
+        <ul>
+            <li><a href="#hero">Inizio</a></li>
+            <li><a href="#info">Info</a></li>
+            <li><a href="#programma">Programma</a></li>
+            <li><a href="#percorso">Percorso</a></li>
+            <li><a href="#iscrizioni">Iscrizioni</a></li>
+            <li><a href="#regolamento">Regolamento</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero" class="hero" style="background: linear-gradient(rgba(45,122,58,0.8), rgba(45,122,58,0.8)), url('https://images.unsplash.com/photo-1552674605-db6ffd4facb5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center;">
+        <h1>Corri Greppi 2026</h1>
+        <p><strong>Mercoledì 15 Aprile 2026</strong><br>La corsa campestre storica del Villa Greppi</p>
+    </section>
+
+    <section id="info" class="event-section">
+        <h2>L'Evento</h2>
+        <p>La **Corri Greppi** è molto più di una semplice corsa campestre: è il momento in cui l'intero istituto si ritrova per celebrare lo sport all'aria aperta. Nata per promuovere il benessere psicofisico degli studenti, la gara attraversa gli splendidi scenari del parco di Villa Greppi e delle zone limitrofe.</p>
+        <p>L'evento è aperto a tutti gli studenti, ai docenti e al personale scolastico. Sono previste classifiche separate per biennio e triennio, con premi per i primi tre classificati di ogni categoria.</p>
+    </section>
+
+    <section id="programma" class="event-section" style="background-color: var(--bg-light);">
+        <h2>Programma della Giornata</h2>
+        <div class="program-table">
+            <p><strong>08:15</strong> - Ritrovo e appello in cortile</p>
+            <p><strong>08:45</strong> - Consegna pettorali presso lo stand del Comitato</p>
+            <p><strong>09:30</strong> - Partenza Categoria Biennio (Maschile e Femminile)</p>
+            <p><strong>10:30</strong> - Partenza Categoria Triennio + Personale</p>
+            <p><strong>11:45</strong> - Ristoro e "Pasta Party" organizzato dall'istituto</p>
+            <p><strong>12:30</strong> - Premiazioni ufficiali</p>
+        </div>
+    </section>
+
+    <section id="percorso" class="event-section">
+        <h2>Il Percorso</h2>
+        <p>Un tracciato di **5 km** immerso nel verde. La partenza è fissata davanti all'ingresso principale della scuola. Il percorso si snoda su fondo misto:</p>
+        <ul>
+            <li><strong>30% Asfalto:</strong> Tratti di collegamento urbano.</li>
+            <li><strong>70% Sterrato:</strong> Sentieri agricoli e vialetti del parco di Villa Greppi.</li>
+        </ul>
+        <p><em>Si raccomanda l'uso di scarpe da trail o scarpe da running con un buon grip in caso di terreno umido.</em></p>
+    </section>
+
+    <section id="iscrizioni" class="event-section" style="background-color: #fff; border: 1px solid #ddd; border-radius: 10px;">
+        <h2>Come Iscriversi</h2>
+        <p>Le iscrizioni devono pervenire entro il **10 Aprile 2026**. I singoli studenti possono iscriversi tramite il modulo qui sotto o consegnando il modulo cartaceo al proprio docente di Scienze Motorie.</p>
+        
+        <form action="#" method="POST" onsubmit="alert('Grazie! Modulo ricevuto (simulazione)'); return false;">
+            <div class="form-group">
+                <label for="nome">Nome e Cognome</label>
+                <input type="text" id="nome" name="nome" class="form-control" required placeholder="Mario Rossi">
+            </div>
+            <div class="form-group">
+                <label for="classe">Classe e Sezione</label>
+                <input type="text" id="classe" name="classe" class="form-control" required placeholder="3^A LSA">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Istituzionale</label>
+                <input type="email" id="email" name="email" class="form-control" required placeholder="nome.cognome@issgreppi.it">
+            </div>
+            <button type="submit" class="btn">Invia Iscrizione</button>
+        </form>
+    </section>
+
+    <section id="regolamento" class="event-section">
+        <h2>Regolamento</h2>
+        <ol>
+            <li><strong>Certificato Medico:</strong> È indispensabile aver consegnato il certificato medico per attività non agonistica alla scuola.</li>
+            <li><strong>Abbigliamento:</strong> Obbligatorio l'uso di scarpe sportive. Si consiglia la divisa della scuola per chi ne è in possesso.</li>
+            <li><strong>Comportamento:</strong> La Corri Greppi promuove il Fair Play. Qualsiasi comportamento antisportivo comporterà la squalifica.</li>
+            <li><strong>Ambiente:</strong> È severamente vietato gettare bicchieri o rifiuti lungo il percorso. Utilizzare i bidoni presenti ai punti di ristoro.</li>
+        </ol>
+    </section>
+
+    <footer>
+        <p><strong>Comitato Sportivo Studentesco - I.I.S.S. A. Greppi</strong></p>
+        <p><a href="../index.html">Home</a> | <a href="../sponsor.html">Sponsor</a> | <a href="../contatti.html">Contatti</a></p>
+        <p><small>&copy; 2026 Greppi Sport. Monticello Brianza (LC)</small></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
