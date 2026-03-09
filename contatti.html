@@ -21,25 +21,69 @@
         </nav>
     </header>
 
-    <main class="container">
+    <section class="hero">
         <h1>Contattaci</h1>
         <p>Hai domande sugli eventi o vuoi proporti come volontario nello staff? Scrivici!</p>
-        <form style="max-width: 600px; margin-top: 2rem;" onsubmit="event.preventDefault();">
-            <div class="form-group">
-                <label for="nome">Nome</label>
-                <input id="nome" type="text" class="form-control">
+    </section>
+
+    <main class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem;">
+            <div>
+                <h2>Modulo di Contatto</h2>
+                <form style="width: 100%;">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input id="nome" type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="oggetto">Oggetto</label>
+                        <input id="oggetto" type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="messaggio">Messaggio</label>
+                        <textarea id="messaggio" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Invia Messaggio</button>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="email">Email (Istituzionale @issgreppi.it)</label>
-                <input id="email" type="email" class="form-control">
+
+            <div>
+                <h2>Contattaci Direttamente</h2>
+                <div style="margin-top: 1.5rem;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">📍 Indirizzo</h3>
+                    <p>I.I.S.S. Alessandro Greppi<br>Via Dei Mille 27<br>Monticello Brianza (LC) 23843</p>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">📧 Email</h3>
+                    <p><a href="mailto:greppisport@issgreppi.it">greppisport@issgreppi.it</a></p>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">📱 Social Media</h3>
+                    <p><a href="https://instagram.com/greppisport" target="_blank">Instagram: @greppisport</a></p>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">💬 Orari di Disponibilità</h3>
+                    <p>Lunedì - Venerdì: 9:00 - 17:00<br>
+                    Rispondiamo ai messaggi entro 24 ore</p>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="messaggio">Messaggio</label>
-                <textarea id="messaggio" class="form-control" rows="5"></textarea>
-            </div>
-            <button type="submit" class="btn">Invia Messaggio</button>
-        </form>
+        </div>
     </main>
+
+    <footer>
+        <p><strong>Comitato Sportivo Studentesco</strong></p>
+        <p>I.I.S.S. Alessandro Greppi - Via Dei Mille 27, Monticello Brianza (LC)</p>
+        <p><a href="https://instagram.com/greppisport" target="_blank">Seguici su Instagram: @greppisport</a></p>
+        <p><small>&copy; 2026 Greppi Sport. Tutti i diritti riservati.</small></p>
+    </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>
