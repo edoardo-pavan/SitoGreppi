@@ -11,7 +11,7 @@
 
     <header class="main-header">
         <nav class="navbar">
-            <div class="logo"><a href="../index.html">Greppi Sport</a></div>
+            <div class="logo"><a href="../index.html"><img src="../img/logo1.png" alt="Logo Greppi Sport"></a></div>
             <button class="menu-toggle" id="menuToggle">☰</button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="../index.html">Home</a></li>
@@ -33,15 +33,21 @@
         </ul>
     </nav>
 
-    <section id="hero" class="hero" style="background: linear-gradient(rgba(45,122,58,0.8), rgba(45,122,58,0.8)), url('../img/immaginegreppirun.jpg'); background-size: cover; background-position: center;">
-        <h1>Corri Greppi 2026</h1>
-        <p><strong>Mercoledì 15 Aprile 2026</strong><br>La corsa campestre storica del Villa Greppi</p>
+    <section id="hero" class="hero" style="background-image: url('../img/immaginegreppirun.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6);"></div>
+        <div style="position: relative; z-index: 2;">
+            <h1>Corri Greppi 2026</h1>
+            <p><strong>Mercoledì 15 Aprile 2026</strong><br>La corsa campestre storica del Villa Greppi</p>
+        </div>
     </section>
 
     <section id="info" class="event-section">
         <h2>L'Evento</h2>
         <p>La **Corri Greppi** è molto più di una semplice corsa campestre: è il momento in cui l'intero istituto si ritrova per celebrare lo sport all'aria aperta. Nata per promuovere il benessere psicofisico degli studenti, la gara attraversa gli splendidi scenari del parco di Villa Greppi e delle zone limitrofe.</p>
-        <p>L'evento è aperto a tutti gli studenti, ai docenti e al personale scolastico. Sono previste classifiche separate per biennio e triennio, con premi per i primi tre classificati di ogni categoria.</p>
+        
+        <div class="image-placeholder" style="max-height: 300px; display: flex; align-items: center;">Foto Greppi Run (in attesa di caricamento)</div>
+
+        <p>L'evento è aperto a tutti gli studenti, al personale scolastico e ai docenti. Sono previste classifiche separate per biennio e triennio, con premi per i primi tre classificati di ogni categoria.</p>
     </section>
 
     <section id="programma" class="event-section" style="background-color: var(--bg-light);">
@@ -66,18 +72,15 @@
         <p><em>Si raccomanda l'uso di scarpe da trail o scarpe da running con un buon grip in caso di terreno umido.</em></p>
     </section>
 
-    <section id="iscrizioni" class="event-section" style="background-color: #fff; border: 1px solid #ddd; border-radius: 10px;">
+    <section id="iscrizioni" class="event-section">
         <h2>Come Iscriversi</h2>
-        <p>Le iscrizioni sono gratuite e aperte a tutti gli studenti, docenti e personale scolastico dell'Istituto.</p>
-        <p><strong>Modalità di iscrizione:</strong></p>
-        <ul style="text-align: left; max-width: 600px; margin: 1rem auto;">
-            <li>Studenti: Iscrizione attraverso la propria classe</li>
-            <li>Docenti e personale: Contatto diretto con il comitato sportivo</li>
-            <li>Le iscrizioni vengono raccolte dai rappresentanti studenteschi</li>
-        </ul>
-        <p style="margin-top: 1rem; padding: 1rem; background: var(--bg-light); border-radius: 8px;">
-            <strong>Contatta il tuo rappresentante di classe o il comitato sportivo per l'iscrizione!</strong>
-        </p>
+        <div class="signup-section">
+            <h3>Scegli la modalità di iscrizione:</h3>
+            <div class="btn-container">
+                <a href="#" class="btn">Singolo</a>
+                <a href="#" class="btn">Gruppi</a>
+            </div>
+        </div>
     </section>
 
     <section id="regolamento" class="event-section">

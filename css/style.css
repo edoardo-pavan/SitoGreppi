@@ -62,6 +62,14 @@ h1, h2, h3 {
   color: var(--primary);
   font-weight: 900;
   font-style: italic;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  vertical-align: middle;
 }
 
 .nav-links {
@@ -89,6 +97,11 @@ h1, h2, h3 {
   text-align: center;
   position: relative;
   overflow: hidden;
+  min-height: 400px; /* Altezza minima uniforme per tutte le Hero */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Effetto striscia diagonale sullo sfondo */
@@ -125,10 +138,11 @@ h1, h2, h3 {
 /* Event Cards - Stile "Flyer" */
 .container {
   max-width: 1200px;
-  margin: -50px auto 50px; /* Sovrappone leggermente alla hero */
+  margin: 40px auto 50px; /* Distacco di 40px dalla hero per leggibilità */
   padding: 0 20px;
   position: relative;
   z-index: 10;
+  scroll-margin-top: 80px; /* Evita che l'header copra il contenuto allo scroll */
 }
 
 .events-grid {
@@ -226,6 +240,37 @@ h1, h2, h3 {
   padding: 80px 20px;
   max-width: 900px;
   margin: 0 auto;
+}
+
+.event-section p {
+  margin-bottom: 0.8rem; /* Riduce lo spazio tra paragrafi per maggiore leggibilità */
+}
+
+/* Stile per le immagini nelle pagine evento */
+.event-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 1rem auto;
+  display: block;
+}
+
+/* Stile per placeholder grigio */
+.image-placeholder {
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-style: italic;
 }
 
 .event-section h2 {
@@ -342,6 +387,9 @@ h1, h2, h3 {
   .about-grid {
     grid-template-columns: 1fr;
   }
+  .video-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 /* Footer */
@@ -353,6 +401,124 @@ footer {
 }
 
 /* Responsive Mobile */
+/* Sezione Iscrizioni - Stile Card Orizzontale (simile alla home ma meno esuberante) */
+.signup-section {
+  background: var(--light);
+  border-left: 8px solid var(--primary);
+  box-shadow: var(--shadow);
+  padding: 25px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.signup-section:hover {
+  transform: translateY(-3px); /* Riduzione traslazione (da -10px a -3px) */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.signup-section h3 {
+  color: var(--dark);
+  margin: 0;
+  flex: 1;
+  min-width: 200px;
+}
+
+.signup-section .btn-container {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Sezione Statistiche per Chi Siamo */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.stat-card {
+  background: var(--dark);
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary-bright);
+}
+
+.stat-desc {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: var(--light);
+}
+
+/* Griglia eventi semplice per Chi Siamo */
+.events-simple-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.simple-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.simple-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.simple-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.simple-card h4 {
+  color: var(--primary);
+  margin: 1rem 0 0.5rem;
+  font-size: 1.3rem;
+}
+
+.simple-card p {
+  padding: 0 1rem 1rem;
+  color: var(--gray-800);
+  font-size: 0.95rem;
+}
+
+/* Effetto hover per la sezione Team */
+.team-card {
+  cursor: pointer;
+}
+
+.team-card img {
+  transition: transform 0.3s;
+}
+
+.team-card:hover img {
+  transform: scale(1.05);
+}
+
+.team-card:hover .team-overlay {
+  transform: translateY(0) !important;
+}
+
 @media (max-width: 768px) {
   .hero h1 { font-size: 2.5rem; }
   .container { margin-top: 20px; }
@@ -364,4 +530,76 @@ footer {
     background: white; flex-direction: column; padding: 20px;
   }
   .nav-links.active { display: flex; }
+}
+
+/* Stili per l'Editor WYSIWYG Flottante */
+.editor-toolbar-floating {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 10000;
+  display: none;
+  position: fixed;
+}
+
+.editor-toolbar-floating button {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.editor-toolbar-floating button:hover {
+  background: #f0f0f0;
+  border-radius: 3px;
+}
+
+/* Stili per la Dashboard (se non già presenti) */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: var(--dark);
+  color: white;
+  padding: 1rem;
+}
+
+.sidebar h3 {
+  color: var(--primary-bright);
+  margin-bottom: 1rem;
+}
+
+.sidebar nav a {
+  display: block;
+  color: white;
+  padding: 0.8rem;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background: var(--primary);
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  background: var(--gray-100);
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
 }

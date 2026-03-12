@@ -11,7 +11,7 @@
 
     <header class="main-header">
         <nav class="navbar">
-            <div class="logo"><a href="../index.html">Greppi Sport</a></div>
+            <div class="logo"><a href="../index.html"><img src="../img/logo1.png" alt="Logo Greppi Sport"></a></div>
             <button class="menu-toggle" id="menuToggle">☰</button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="../index.html">Home</a></li>
@@ -33,14 +33,19 @@
         </ul>
     </nav>
 
-    <section id="hero" class="hero" style="background: linear-gradient(rgba(45,122,58,0.8), rgba(45,122,58,0.8)), url('../img/volontari1.png'); background-size: cover; background-position: center;">
-        <h1>Festa Primaverile dello Sport</h1>
-        <p>28 Maggio 2026 • Tornei Interclasse • Festeggiamo la fine dell'anno scolastico!</p>
+    <section id="hero" class="hero" style="background-image: url('../img/volontari1.png'); background-size: cover; background-position: center;">
+        <div class="hero-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6);"></div>
+        <div style="position: relative; z-index: 2;">
+            <h1>Festa Primaverile dello Sport</h1>
+            <p>28 Maggio 2026 • Tornei Interclasse • Festeggiamo la fine dell'anno scolastico!</p>
+        </div>
     </section>
 
     <section id="info" class="event-section">
         <h2>Info Evento</h2>
-        <p>Una giornata intera dedicata allo sport di squadra per salutare l'anno scolastico. Le lezioni sono sospese e tutta la scuola si trasforma in un grande villaggio olimpico con tornei, musica e stand gastronomici gestiti dai rappresentanti degli studenti.</p>
+        <p>Una giornata intera dedicata allo sport di squadra per salutare l'anno scolastico. Le lezioni sono sospese e tutta la scuola si trasforma in un grande villaggio olimpico con tornei, musica e stand gestiti dai rappresentanti degli studenti.</p>
+        
+        <div class="image-placeholder" style="max-height: 300px; display: flex; align-items: center;">Foto Festa Primaverile (in attesa di caricamento)</div>
     </section>
 
     <section id="programma" class="event-section">
@@ -61,11 +66,13 @@
 
     <section id="iscrizioni" class="event-section">
         <h2>Come Iscriversi</h2>
-        <p>L'iscrizione avviene per classe attraverso i rappresentanti studenteschi. Ogni classe può partecipare a uno o più tornei.</p>
-        <p><strong>Contatta il tuo rappresentante di classe per l'iscrizione!</strong></p>
-        <p style="margin-top: 1rem; padding: 1rem; background: var(--bg-light); border-radius: 8px;">
-            Le iscrizioni vengono raccolte direttamente in classe dai rappresentanti studenteschi per garantire una partecipazione organizzata e sicura.
-        </p>
+        <div class="signup-section">
+            <div>
+                <h3>Modalità di Iscrizione</h3>
+                <p>L'iscrizione avviene per classe attraverso i rappresentanti studenteschi. Ogni classe può partecipare a uno o più tornei.</p>
+                <p><strong>Contatta il tuo rappresentante di classe per l'iscrizione!</strong></p>
+            </div>
+        </div>
     </section>
 
     <section id="regolamento" class="event-section">

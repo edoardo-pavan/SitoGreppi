@@ -10,7 +10,7 @@
 <body>
     <header class="main-header">
         <nav class="navbar">
-            <div class="logo"><a href="index.html">Greppi Sport</a></div>
+            <div class="logo"><a href="index.html"><img src="img/logo1.png" alt="Logo Greppi Sport"></a></div>
             <button class="menu-toggle" id="menuToggle">☰</button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
@@ -21,13 +21,17 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>Chi Siamo</h1>
-        <p>Il Comitato Sportivo Scolastico dell’Istituto di Istruzione Superiore “Alessandro Greppi”</p>
+    <section class="hero" style="background-image: url('img/grupporagazzicomitato.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6);"></div>
+        <div style="position: relative; z-index: 2;">
+            <h1>Chi Siamo</h1>
+            <p>Il Comitato Sportivo Scolastico dell’Istituto di Istruzione Superiore “Alessandro Greppi”</p>
+        </div>
     </section>
 
     <main class="container">
         <h2>Il Nostro Comitato</h2>
+        <br>
         <p>Il Comitato Sportivo Scolastico dell’Istituto di Istruzione Superiore “Alessandro Greppi” nasce dalla collaborazione e dall’impegno dei docenti di Scienze Motorie, con l’obiettivo di promuovere lo sport come elemento centrale della vita scolastica. Attraverso diverse iniziative e attività, il comitato lavora per diffondere tra gli studenti i valori dello sport, del benessere e della partecipazione attiva alla comunità scolastica.</p>
         <p>Il progetto si inserisce in un percorso educativo più ampio che vede l’attività sportiva non solo come momento di movimento, ma anche come occasione di crescita personale, collaborazione e sviluppo di uno stile di vita sano. Le attività promosse dai docenti mirano a coinvolgere studenti e comunità scolastica, creando opportunità che rafforzino il senso di appartenenza all’istituto.</p>
         <p>Le risorse raccolte attraverso queste iniziative vengono reinvestite nella scuola con uno scopo preciso: migliorare e sviluppare gli spazi dedicati allo sport. Questo impegno ha già contribuito alla realizzazione e al potenziamento di ambienti scolastici sportivi, come la nuova palestra del complesso di Villa Greppi, offrendo agli studenti strutture sempre più adeguate e moderne.</p>
@@ -35,12 +39,12 @@
 
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;" class="about-grid">
             <div style="background: #f5f5f5; padding: 1.5rem; border-radius: 8px;">
-                <h3 style="color: var(--primary);">🎯 La Nostra Missione</h3>
+                <h3 style="color: var(--primary);">La Nostra Missione</h3>
                 <p>Promuovere stili di vita sani e attivi, favorendo l'inclusione e il senso di appartenenza scolastica attraverso eventi sportivi di qualità, aperti a tutta la comunità del Greppi.</p>
             </div>
 
             <div style="background: #f5f5f5; padding: 1.5rem; border-radius: 8px;">
-                <h3 style="color: var(--primary);">💪 I Nostri Valori</h3>
+                <h3 style="color: var(--primary);">I Nostri Valori</h3>
                 <p><strong>Inclusione</strong> - Lo sport per tutti<br>
                 <strong>Salute</strong> - Stili di vita attivi<br>
                 <strong>Comunità</strong> - Legami che durano<br>
@@ -48,29 +52,72 @@
             </div>
         </div>
 
+        <h2 style="margin-top: 2rem;">I Nostri Numeri</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">1700+</div>
+                <div class="stat-desc">Iscritti a Greppi Run</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">400+</div>
+                <div class="stat-desc">Iscritti a Greppi Bike</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">Decine</div>
+                <div class="stat-desc">Tornei sportivi scolastici</div>
+            </div>
+        </div>
+
         <h2 style="margin-top: 2rem;">I Nostri Eventi Principali</h2>
-        <ul style="margin-top: 1rem;">
-            <li><strong>Corri Greppi</strong> - La corsa campestre d'istituto con 5km di pura energia in mezzo alla natura brianzola</li>
-            <li><strong>Greppi Bike</strong> - Una pedalata ecologica e inclusiva di 15km tra le colline del lecchese</li>
-            <li><strong>Festa Primaverile</strong> - Tornei interclasse di calcetto, pallavolo e basket per chiudere l'anno in allegria</li>
-        </ul>
+        <div class="events-simple-grid">
+            <div class="simple-card">
+                <img src="img/immaginegreppirun.jpg" alt="Corri Greppi">
+                <h4>Corri Greppi</h4>
+                <p>La corsa campestre d'istituto con 5km di pura energia in mezzo alla natura brianzola</p>
+            </div>
+            <div class="simple-card">
+                <img src="img/imgbici1" alt="Greppi Bike">
+                <h4>Greppi Bike</h4>
+                <p>Una pedalata ecologica e inclusiva di 15km tra le colline del lecchese</p>
+            </div>
+            <div class="simple-card">
+                <img src="img/volontari1.png" alt="Festa Primaverile">
+                <h4>Festa Primaverile</h4>
+                <p>Tornei interclasse di calcetto, pallavolo e basket per chiudere l'anno in allegria</p>
+            </div>
+        </div>
 
         <h2 style="margin-top: 2rem;">Il Nostro Team</h2>
         <p>Siamo coordinati dai docenti del dipartimento di Scienze Motorie e supportati da uno staff dedicato di studenti volontari appassionati di organizzazione e sport.</p>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
-            <div style="text-align: center;">
-                <img src="img/grupporagazzicomitato.jpg" alt="Gruppo del Comitato Studentesco" style="width: 100%; max-width: 300px; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+        <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+            <div class="team-card" style="text-align: center;">
+                <div style="position: relative; overflow: hidden; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="img/grupporagazzicomitato.jpg" alt="Gruppo del Comitato Studentesco" style="width: 100%; max-width: 300px; height: 200px; object-fit: cover; display: block;">
+                    <div class="team-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.8); color: white; padding: 1rem; transform: translateY(100%); transition: transform 0.3s;">
+                        <strong>Studenti appassionati</strong><br>Organizzano gli eventi sportivi
+                    </div>
+                </div>
                 <h4>Il Comitato Studentesco</h4>
                 <p>Studenti appassionati che organizzano gli eventi sportivi</p>
             </div>
-            <div style="text-align: center;">
-                <img src="img/volontariprof1.png" alt="Volontari e Professori" style="width: 100%; max-width: 300px; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+            <div class="team-card" style="text-align: center;">
+                <div style="position: relative; overflow: hidden; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="img/volontariprof1.png" alt="Volontari e Professori" style="width: 100%; max-width: 300px; height: 200px; object-fit: cover; display: block;">
+                    <div class="team-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.8); color: white; padding: 1rem; transform: translateY(100%); transition: transform 0.3s;">
+                        <strong>Coordinazione e supporto</strong><br>Docenti e studenti uniti
+                    </div>
+                </div>
                 <h4>Coordinatori e Volontari</h4>
                 <p>Docenti e studenti che rendono possibile ogni evento</p>
             </div>
-            <div style="text-align: center;">
-                <img src="img/volontari2.png" alt="Team dei Volontari" style="width: 100%; max-width: 300px; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+            <div class="team-card" style="text-align: center;">
+                <div style="position: relative; overflow: hidden; border-radius: 8px; margin-bottom: 1rem;">
+                    <img src="img/volontari2.png" alt="Team dei Volontari" style="width: 100%; max-width: 300px; height: 200px; object-fit: cover; display: block;">
+                    <div class="team-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.8); color: white; padding: 1rem; transform: translateY(100%); transition: transform 0.3s;">
+                        <strong>Cuore pulsante</strong><br>Delle nostre manifestazioni
+                    </div>
+                </div>
                 <h4>Staff Operativo</h4>
                 <p>Il cuore pulsante delle nostre manifestazioni</p>
             </div>

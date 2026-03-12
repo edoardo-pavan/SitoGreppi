@@ -11,7 +11,7 @@
 
     <header class="main-header">
         <nav class="navbar">
-            <div class="logo"><a href="../index.html">Greppi Sport</a></div>
+            <div class="logo"><a href="../index.html"><img src="../img/logo1.png" alt="Logo Greppi Sport"></a></div>
             <button class="menu-toggle" id="menuToggle">☰</button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="../index.html">Home</a></li>
@@ -33,14 +33,23 @@
         </ul>
     </nav>
 
-    <section id="hero" class="hero" style="background: linear-gradient(rgba(45,122,58,0.8), rgba(45,122,58,0.8)), url('../img/imgbici1'); background-size: cover; background-position: center;">
-        <h1>Greppi Bike 2026</h1>
-        <p>10 Maggio 2026 • Ciclopedalata ecologica • 15km</p>
+    <section id="hero" class="hero" style="background-image: url('../img/imgbici1'); background-size: cover; background-position: center;">
+        <div class="hero-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6);"></div>
+        <div style="position: relative; z-index: 2;">
+            <h1>Greppi Bike 2026</h1>
+            <p>10 Maggio 2026 • Ciclopedalata ecologica • 15km</p>
+        </div>
     </section>
 
     <section id="info" class="event-section">
         <h2>Info Evento</h2>
         <p>Prendi la tua bici e unisciti a noi per la Greppi Bike! Non è una gara, ma una bellissima passeggiata su due ruote per promuovere la mobilità sostenibile e scoprire i sentieri meno noti della nostra provincia.</p>
+        
+        <img src="../img/45864e_4db5e9af018948b09e7f8d883d0123fa~mv2.avif" alt="Greppi Bike" class="event-image" style="max-height: 300px; object-fit: cover;">
+
+        <p>Il percorso si snoda attraverso panorami mozzafiato, con una pausa ristoro organizzata per tutti i partecipanti. Un'occasione per vivere insieme una giornata all'insegna del movimento e della natura.</p>
+        
+        <img src="../img/45864e_30f52be5ee38446f97f398d8cb1f7d15~mv2.avif" alt="Greppi Bike" class="event-image" style="max-height: 300px; object-fit: cover;">
     </section>
 
     <section id="programma" class="event-section">
@@ -60,10 +69,12 @@
 
     <section id="iscrizioni" class="event-section">
         <h2>Come Iscriversi</h2>
-        <p>Scegli la modalità di iscrizione:</p>
-        <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1rem;">
-            <a href="#" class="btn">Singolo</a>
-            <a href="#" class="btn">Gruppi</a>
+        <div class="signup-section">
+            <h3>Scegli la modalità di iscrizione:</h3>
+            <div class="btn-container">
+                <a href="#" class="btn">Singolo</a>
+                <a href="#" class="btn">Gruppi</a>
+            </div>
         </div>
     </section>
 

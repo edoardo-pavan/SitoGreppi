@@ -1,0 +1,66 @@
+{
+  "config": {
+    "titolo_sito": "Greppi Sport",
+    "password_admin": "$2y$10$EsempioHashBcryptPerPasswordSicura",
+    "video_corri_greppi": "0tg53-FqKUw",
+    "video_greppi_bike": "YhmUD1YrfaY"
+  },
+  "colori": {
+    "primary": "#2d7a3a",
+    "primary_bright": "#4ade80",
+    "accent": "#facc15",
+    "dark": "#121212",
+    "light": "#ffffff"
+  },
+  "pagine": {
+    "home": {
+      "titolo_hero": "Lo sport vive al Greppi",
+      "descrizione_hero": "Benvenuti nel portale ufficiale del Comitato Sportivo Studentesco dell'I.I.S.S. Alessandro Greppi di Monticello (LC)."
+    },
+    "chi_siamo": {
+      "titolo": "Chi Siamo",
+      "contenuto": "<p>Il Comitato Sportivo Scolastico dell’Istituto di Istruzione Superiore “Alessandro Greppi” nasce dalla collaborazione e dall’impegno dei docenti di Scienze Motorie...</p>"
+    },
+    "sponsor": {
+      "titolo": "I Nostri Partner",
+      "contenuto": "<p>Grazie al sostegno delle aziende del territorio, possiamo offrire eventi gratuiti...</p>"
+    },
+    "contatti": {
+      "titolo": "Contattaci",
+      "indirizzo": "I.I.S.S. Alessandro Greppi<br>Via Dei Mille 27<br>Monticello Brianza (LC) 23843",
+      "email": "greppisport@issgreppi.it"
+    }
+  },
+  "eventi": [
+    {
+      "id": "corri-greppi",
+      "titolo": "Corri Greppi",
+      "slug": "corri-greppi",
+      "descrizione_breve": "La tradizionale corsa campestre d'istituto aperta a studenti, docenti e personale. 5km di pura energia nel verde della Brianza.",
+      "immagine": "img/immaginegreppirun.jpg",
+      "contenuto": "<p>La <strong>Corri Greppi</strong> è molto più di una semplice corsa campestre...</p>",
+      "data": "2026-04-15",
+      "visibile": true
+    },
+    {
+      "id": "greppi-bike",
+      "titolo": "Greppi Bike",
+      "slug": "greppi-bike",
+      "descrizione_breve": "Una pedalata ecologica non competitiva di 15km tra le colline del lecchese.",
+      "immagine": "img/imgbici1",
+      "contenuto": "<p>Prendi la tua bici e unisciti a noi per la Greppi Bike!...</p>",
+      "data": "2026-05-10",
+      "visibile": true
+    },
+    {
+      "id": "festa-primaverile",
+      "titolo": "Festa Primaverile",
+      "slug": "festa-primaverile",
+      "descrizione_breve": "L'evento di chiusura dell'anno: tornei interclasse di calcetto, pallavolo e basket.",
+      "immagine": "img/volontari1.png",
+      "contenuto": "<p>Una giornata intera dedicata allo sport di squadra...</p>",
+      "data": "2026-05-28",
+      "visibile": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# Protezione cartella admin
+<FilesMatch "\.(php|inc|log|sql)$">
+    Order Allow,Deny
+    Allow from All
+</FilesMatch>
+
+# Protezione file sensibili
+<FilesMatch "\.(json|env|config)$">
+    Order Allow,Deny
+    Deny from All
+</FilesMatch>
+
+# Riscrittura URL per pagine evento (opzionale)
+RewriteEngine On
+RewriteRule ^evento/([^/]+)/?$ evento.php?id=$1 [L,QSA]
+
+# Impostazioni PHP per upload
+php_value upload_max_filesize 100M
+php_value post_max_size 100M
+php_value max_execution_time 300
+php_value memory_limit 128M
